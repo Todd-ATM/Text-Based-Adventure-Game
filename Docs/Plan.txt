@@ -1,0 +1,28 @@
+High level Overview planning:
+
+*construction of levels could use factory creational pattern design.
+*Same with creation of different items???
+*Need to ensure we have only one Game class, so singleton pattern possibly?
+
+*Game class:
+*Starts the game, ends the game, would be in charge of the main loop, aka spawn the specific level
+*change the level, end the game really would be it
+
+*Level Class:
+*defines initial descriptor, has specific NPC's in each, specific leave conditions maybe?, specific
+*items to be obtained by the player, and clues.
+
+*Player Class:
+*has an inventory, can do specific actions when prompted: Use [item]: allows player to use specific 
+*items that can actually be used like a key. Talk [NPC]: allows player to talk to NPC maybe more idk
+
+*NPC Class:
+*gives player dialogue when prompted, depends on what player chooses to say. May hold items of their
+*own, so have their own inventory too?
+
+*inventory:
+*Basically a vector holder each Player or NPC Can have, a vector of items
+
+*Items:
+*just items.  could be classified as clues, in which case those items don't do nothing, aka don't use
+*them but they give player clues. But again could also be used like keys and stuff.
