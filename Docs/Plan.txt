@@ -8,6 +8,8 @@ High level Overview planning:
 *data, e.g different NPCS and clues etc, they won't change much beyond that which I think factories 
 *Would be made for, aka different behaved rooms (Combat room) or (Puzzle room). Instead there all
 *puzzle rooms.
+*Also wondering how main main loop should go, should it all be done in game? aka game spawns level
+*manages player input, interactions between NPC's or should that be something different entirely??? hmmm 
 
 *singleton as well doesn't make too much sense for one object of the game... could maybe since
 *it can be accessed globally but breaks some OOP ideas not ideal, and we can just manage connections
@@ -15,11 +17,12 @@ High level Overview planning:
 
 *Game class:
 *Starts the game, ends the game, would be in charge of the main loop, aka spawn the specific level
-*change the level, end the game really would be it
+*change the level,  and end the game. really would be it
 
 *Level Class:
 *defines initial descriptor, has specific NPC's in each, specific leave conditions maybe?, specific
 *items to be obtained by the player, and clues.
+*should be abstract.
 
 *Player Class:
 *has an inventory, can do specific actions when prompted: Use [item]: allows player to use specific 
