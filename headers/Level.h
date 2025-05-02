@@ -11,6 +11,8 @@ class Level {
 
     void SetDescription(std::string D);
 
+    void SetName();
+
 
   private:
     std::string description;
