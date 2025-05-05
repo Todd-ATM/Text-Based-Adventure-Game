@@ -15,6 +15,9 @@ High level Overview planning:
 *it can be accessed globally but breaks some OOP ideas not ideal, and we can just manage connections
 *through include it's not too big a deal I think.
 
+*I decided to go for simplification of factory for the levels, simply given a specific ID the 
+*LevelFactory would construct a level with the ID's specific data #OfNPCS, #OfClues, etc;
+
 *Game class:
 *Starts the game, ends the game, would be in charge of the main loop, aka spawn the specific level
 *change the level,  and end the game. really would be it

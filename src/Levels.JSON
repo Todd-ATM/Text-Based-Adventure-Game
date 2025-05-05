@@ -1,4 +1,16 @@
-{"Name": "Level 1"
+{
+    "Room1" : {
+        "id" : "1001",
+        "name" : "Corridors",
+        "description" : "A white snowy tundra consumes your every vision. In the distance you can see the survivors you were sent here for",
+        "npcs" : ["Bill"]
+    },
+    "Room2" : {
+        "id" : "1002",
+        "name" : "Inside",
+        "description" : "You are now inside"
+    }
+
 
 
 

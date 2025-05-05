@@ -9,9 +9,7 @@ void Game::start() {
     json config;
     //parse through file
     std::ifstream file("Levels.JSON");
-    if (file.is_open()) {
-        file >> config;
-    }
-
-    std::cout << config.dump(4) << std::endl;
+    config = json::parse(file);
+    std::cout << config["Room1"]["description"] << std::endl;
+    std::cout << config["Room2"]["description"];
 }
