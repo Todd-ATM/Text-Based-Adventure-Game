@@ -7,7 +7,7 @@ class Level {
   public:
     Level(std::string name, std::string description);
 
-    void DisplayDescription();
+    std::string DisplayDescription();
 
     void SetDescription(std::string D);
 

@@ -9,3 +9,7 @@ std::string Level::GetName() {
     return name;
 }
 
+std::string Level::DisplayDescription() {
+    return description;
+}
+
