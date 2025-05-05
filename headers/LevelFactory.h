@@ -14,8 +14,10 @@ class LevelFactory {
     LevelFactory();
     Level* createLevel(std::string id);
 
-  private:
     json config;
+
+  private:
+
 };
 
 #endif

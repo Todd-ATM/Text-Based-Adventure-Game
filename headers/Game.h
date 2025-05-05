@@ -7,7 +7,14 @@
 
 class Game {
   public:
+    Game();
     void start();
+
+
+  private:
+      //factory
+      LevelFactory levelFactory;
+      std::vector<Level*> maps;
 };
 
 #endif
