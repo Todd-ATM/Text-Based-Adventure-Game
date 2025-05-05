@@ -5,13 +5,13 @@
 
 class Level {
   public:
-    Level();
+    Level(std::string name, std::string description);
 
     void DisplayDescription();
 
     void SetDescription(std::string D);
 
-    void SetName();
+    std::string GetName();
 
 
   private:
