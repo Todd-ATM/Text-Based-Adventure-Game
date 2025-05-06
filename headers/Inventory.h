@@ -11,7 +11,7 @@ class Inventory {
     void placeItem();
     void removeItem();
   private:
-    std::vector<std::string> INV;
+    std::vector<item*> INV;
 };
 
 #endif

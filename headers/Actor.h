@@ -5,11 +5,10 @@
 
 class Actor {
   public: 
-    virtual void Action() = 0;
+    virtual void Action(std::string Input) = 0;
   
   private:
   Inventory Inventory;
-  
 };
 
 #endif
