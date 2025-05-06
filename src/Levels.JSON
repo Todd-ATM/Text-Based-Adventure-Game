@@ -2,12 +2,23 @@
     "Room1" : {
         "name" : "Corridors",
         "description" : "A white snowy tundra consumes your every vision. In the distance you can see the survivors you were sent here for",
-        "npcs" : ["Bill"]
+        "npcs" : ["Bill"],
+        "introduction" : "This is a text based adventure game, you have been called out to \n to a distress call out to a remote base in the antarctic, the previous \n members have all gone missing. \n" 
     },
     "Room2" : {
         "name" : "Inside",
         "description" : "You are now inside"
+    },
+    "Room3" : {
+        "name" : "Snake Room",
+        "description" : "This room is filled with snakes and there dangerous and they're gonna harm you"
+    },
+    "Room4" : {
+        "name" : "Gorilla Room",
+        "description" : "this room has an angry gorilla"
     }
+
+    
 
 
 

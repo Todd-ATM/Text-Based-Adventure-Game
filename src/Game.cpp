@@ -1,10 +1,8 @@
 #include "Game.h"
 
 void Game::start() {
-    std::cout << maps[0]->GetName() << std::endl;
-    std::cout << maps[0]->DisplayDescription();
-    std::cout << maps[1]->GetName() << std::endl;
-    std::cout << maps[1]->DisplayDescription();
+    std::cout << maps[3]->GetName();
+    std::cout << maps[3]->DisplayDescription();
 }
 
 //default constructor

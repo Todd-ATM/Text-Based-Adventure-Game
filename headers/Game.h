@@ -9,6 +9,7 @@ class Game {
   public:
     Game();
     void start();
+    void GameLoop();
 
 
   private:
