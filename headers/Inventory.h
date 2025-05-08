@@ -7,9 +7,10 @@
 
 class Inventory {
   public:
-    std::string getItem();
+    item* getItem(int i);
     void placeItem();
     void removeItem();
+    std::vector<item*> getINV();
   private:
     std::vector<item*> INV;
 };

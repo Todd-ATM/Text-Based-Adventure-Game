@@ -4,6 +4,7 @@
 class item {
   public:
     virtual void use() = 0;
+    virtual std::string getName();
 };
 
 #endif

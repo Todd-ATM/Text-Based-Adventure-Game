@@ -5,8 +5,11 @@ Player::Player() {
   commands = {"EXAMINE", "USE"};
 }
 
+std::vector<item*> Player::getInventory() {
+  return inventory.getINV();
+}
+
 void Player::Action(std::string Input)  {
-    std::vector<std::string> Words;
     std::string word;
     for (auto x : Input) {
       if (x == ' ') {
@@ -24,5 +27,20 @@ void Player::Action(std::string Input)  {
 
     for (int i = 0; i < Words.size(); i++) {
       std::cout << Words[i] << std::endl;
+    }
+
+    //Commands
+    if (Words[0] == commands[0]) {
+      std::cout << "You just used Examine" << std::endl;
+    } 
+    else if (Words[0] == "USE") {
+      std::cout << "You just used Use" << std::endl;
+      for (int i = 0; i < inventory.getINV().size(); i++) {
+        if (Words[1] == inventory.getItem(i)->getName()) {
+          std::cout << "found item. Item name : " << inventory.getItem(i);
+        }
+      }
+    } else {
+      std::cout << "Invalid Command" << std::endl;
     }
 }
