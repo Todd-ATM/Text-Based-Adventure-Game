@@ -4,6 +4,7 @@
 #include <iostream>
 #include <Level.h>
 #include <LevelFactory.h>
+#include "Player.h"
 
 class Game {
   public:
@@ -16,6 +17,8 @@ class Game {
       //factory
       LevelFactory levelFactory;
       std::vector<Level*> maps;
+      //player
+      Player player;
 };
 
 #endif

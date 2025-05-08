@@ -1,8 +1,9 @@
 #include "Game.h"
 
 void Game::start() {
-    std::cout << maps[3]->GetName();
-    std::cout << maps[3]->DisplayDescription();
+    std::cout << maps[3]->GetName() << std::endl;
+    std::cout << maps[3]->DisplayDescription() << std::endl;
+    player.Action("EXAMINE BODY NOW");
 }
 
 //default constructor
