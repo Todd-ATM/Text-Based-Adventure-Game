@@ -3,7 +3,8 @@
 void Game::start() {
     std::cout << maps[3]->GetName() << std::endl;
     std::cout << maps[3]->DisplayDescription() << std::endl;
-    player.Action("EXAMINE BODY NOW");
+    player.getInventory().placeItem("Knife");
+    player.getInventory().displayItems();
 }
 
 //default constructor

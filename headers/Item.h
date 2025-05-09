@@ -1,10 +1,16 @@
 #ifndef ITEM_HEADER_H
 #define ITEM_HEADER_H
 
-class item {
+#include <string>
+
+class Item {
   public:
-    virtual void use() = 0;
-    virtual std::string getName();
+    virtual void Use() = 0;
+    virtual std::string getName() = 0;
+    std::string Name;
+
+  private:
+
 };
 
 #endif

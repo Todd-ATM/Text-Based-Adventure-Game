@@ -4,11 +4,11 @@
 #include "Actor.h"
 #include <iostream>
 
-class Player : Actor {
+class Player : public Actor {
   public:
     Player();
     void Action(std::string Input) override;
-    std::vector<item*> getInventory() override;
+    Inventory getInventory() override;
 
   private: 
     std::vector<std::string> commands;

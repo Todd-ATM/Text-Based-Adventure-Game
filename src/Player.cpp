@@ -5,8 +5,8 @@ Player::Player() {
   commands = {"EXAMINE", "USE"};
 }
 
-std::vector<item*> Player::getInventory() {
-  return inventory.getINV();
+Inventory Player::getInventory() {
+  return inventory;
 }
 
 void Player::Action(std::string Input)  {
@@ -36,7 +36,7 @@ void Player::Action(std::string Input)  {
     else if (Words[0] == "USE") {
       std::cout << "You just used Use" << std::endl;
       for (int i = 0; i < inventory.getINV().size(); i++) {
-        if (Words[1] == inventory.getItem(i)->getName()) {
+        if (Words[1] == inventory.getItem(i)->Name) {
           std::cout << "found item. Item name : " << inventory.getItem(i);
         }
       }

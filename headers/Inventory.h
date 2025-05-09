@@ -2,17 +2,21 @@
 #define INVENTORY_HEADER_H
 
 #include "Item.h"
+#include "ItemFactory.h"
 #include <string>
 #include <vector>
+#include <iostream>
 
 class Inventory {
   public:
-    item* getItem(int i);
-    void placeItem();
+    Item* getItem(int i);
+    void placeItem(std::string Type);
     void removeItem();
-    std::vector<item*> getINV();
+    void displayItems();
+    std::vector<Item*> getINV();
   private:
-    std::vector<item*> INV;
+    std::vector<Item*> INV;
+    ItemFactory factory;
 };
 
 #endif
