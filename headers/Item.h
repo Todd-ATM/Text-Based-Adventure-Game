@@ -10,9 +10,6 @@ class Item {
     virtual std::string getName() = 0;
   protected:
       std::string Name;
-
-  private:
-
 };
 
 #endif

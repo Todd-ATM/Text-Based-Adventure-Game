@@ -13,7 +13,7 @@ class Inventory {
     void placeItem(std::string Type);
     void removeItem();
     void displayItems();
-    std::vector<Item*> getINV();
+    int GetInventorySize();
   private:
     std::vector<Item*> INV;
     ItemFactory factory;

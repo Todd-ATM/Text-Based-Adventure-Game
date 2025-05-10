@@ -4,9 +4,9 @@ void Game::start() {
     std::cout << maps[3]->GetName() << std::endl;
     std::cout << maps[3]->DisplayDescription() << std::endl;
     player.placeItem("Knife");
-    Item* currentItem = player.EquipItem(0);
-    currentItem->Use();
     player.listItems();
+    player.Action("EQUIP Knife");
+    player.Action("USE Knife");
 }
 
 //default constructor

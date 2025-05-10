@@ -1,7 +1,7 @@
 #include "Inventory.h"
 
-std::vector<Item*> Inventory::getINV() {
-    return INV;
+int Inventory::GetInventorySize() {
+    return INV.size();
 }
 
 Item* Inventory::getItem(int i) {
