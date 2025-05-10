@@ -17,7 +17,13 @@ void Inventory::placeItem(std::string Type) {
 }
 
 void Inventory::displayItems() {
-    for (int i = 0; i < INV.size(); i++) {
-        std::cout << INV[i] << std::endl;
+    if (INV.size() > 0) {
+        for (int i = 0; i < INV.size(); i++) {
+            std::cout << "*" << INV[i]->getName() << std::endl;
+        }
     }
+    else {
+        std::cout << "No Items to display" << std::endl;
+    }
+
 }
