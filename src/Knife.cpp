@@ -10,4 +10,5 @@ std::string Knife::getName() {
 
 void Knife::Use() {
     //do nothing for now
+    std::cout << "Used knife" << std::endl;
 }

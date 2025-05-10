@@ -10,10 +10,12 @@ class Player : public Actor {
     void Action(std::string Input) override;
     void placeItem(std::string Type) override;
     void listItems() override;
+    Item* EquipItem(int i) override;
 
   private: 
     std::vector<std::string> commands;
     std::vector<std::string> Words;
+    Item* CurrentItem = nullptr;
 };
 
 #endif
