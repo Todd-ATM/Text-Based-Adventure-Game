@@ -8,7 +8,7 @@ class Player : public Actor {
   public:
     Player();
     void Action(std::string Input) override;
-    Inventory getInventory() override;
+    Inventory& getInventory() override;
 
   private: 
     std::vector<std::string> commands;

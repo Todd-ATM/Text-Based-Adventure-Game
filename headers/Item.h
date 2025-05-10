@@ -2,6 +2,7 @@
 #define ITEM_HEADER_H
 
 #include <string>
+#include <iostream>
 
 class Item {
   public:

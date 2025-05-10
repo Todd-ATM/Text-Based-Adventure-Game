@@ -5,7 +5,7 @@ Player::Player() {
   commands = {"EXAMINE", "USE"};
 }
 
-Inventory Player::getInventory() {
+Inventory& Player::getInventory() {
   return inventory;
 }
 

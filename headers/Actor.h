@@ -6,7 +6,7 @@
 class Actor {
   public: 
     virtual void Action(std::string Input) = 0;
-    virtual Inventory getInventory() = 0;
+    virtual Inventory& getInventory() = 0;
   
   private:
 

@@ -5,7 +5,11 @@ std::vector<Item*> Inventory::getINV() {
 }
 
 Item* Inventory::getItem(int i) {
-    return INV[i];
+        if (i >= 0 && i < static_cast<int>(INV.size()) && INV[i] != nullptr) {
+            return INV[i];
+        }
+        std::cout << "Error: Invalid index or null item at index " << i << std::endl;
+        return nullptr;
 }
 
 void Inventory::placeItem(std::string Type) {

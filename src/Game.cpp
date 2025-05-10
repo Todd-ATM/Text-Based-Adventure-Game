@@ -4,7 +4,9 @@ void Game::start() {
     std::cout << maps[3]->GetName() << std::endl;
     std::cout << maps[3]->DisplayDescription() << std::endl;
     player.getInventory().placeItem("Knife");
-    player.getInventory().displayItems();
+    Item* firstItem = player.getInventory().getItem(0);
+    std::cout << firstItem->Name << std::endl;
+
 }
 
 //default constructor

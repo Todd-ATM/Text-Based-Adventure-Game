@@ -5,6 +5,7 @@
 
 class Knife : public Item {
   public:
+    Knife();
     void Use() override;
     std::string getName() override;
 };
