@@ -9,7 +9,7 @@
 class ItemFactory {
   public:
     Item* createItem(std::string Type) {
-      if (Type == "Knife") {
+      if (Type == "KNIFE") {
         return new Knife;
       }
       return nullptr;

@@ -1,7 +1,9 @@
 #ifndef LEVEL_HEADER_H
 #define LEVEL_HEADER_H
 
-#include<string>
+#include <string>
+#include <map>
+#include "Clue.h"
 
 class Level {
   public:
@@ -17,6 +19,9 @@ class Level {
   private:
     std::string description;
     std::string name;
+    //set of clues
+    std::map<std::string, Clue*> Clues;
+    
     
 };
 

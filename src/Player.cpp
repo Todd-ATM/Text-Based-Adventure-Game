@@ -3,6 +3,8 @@
 //populate list of commands
 Player::Player() {
   commands = {"EXAMINE", "USE", "EQUIP"};
+  //default inventory
+  placeItem("KNIFE");
 }
 
 void Player::placeItem(std::string Type) {
@@ -37,10 +39,6 @@ void Player::Action(std::string Input)  {
       }
     }
 
-    for (int i = 0; i < Words.size(); i++) {
-      std::cout << Words[i] << std::endl;
-    }
-
     //Commands
     if (Words[0] == commands[0]) {
       std::cout << "You just used Examine" << std::endl;
@@ -65,6 +63,8 @@ void Player::Action(std::string Input)  {
         else 
           std::cout << "Invalid Equip: You can only equip item's you have in inventory" << std::endl;
       }
+    } else if (Words[0] == "INVENTORY") {
+      listItems();
     } else {
       std::cout << "Invalid Command" << std::endl;
       Words.clear();

@@ -1,9 +1,9 @@
 {
     "Room1" : {
-        "name" : "Corridors",
-        "description" : "A white snowy tundra consumes your every vision. In the distance you can see the survivors you were sent here for",
+        "name" : "Outer Door",
+        "description" : "All around you is thick jungle. A massive Stone door worn by time stands in front of you.",
         "npcs" : ["Bill"],
-        "introduction" : "This is a text based adventure game, you have been called out to \n to a distress call out to a remote base in the antarctic, the previous \n members have all gone missing. \n" 
+        "Clue1" : "You notice a stone tablet inscribed with text covered by a thick layer of jungle"
     },
     "Room2" : {
         "name" : "Inside",

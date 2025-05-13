@@ -5,6 +5,8 @@
 #include <Level.h>
 #include <LevelFactory.h>
 #include "Player.h"
+#include <map>
+#include "Clue.h"
 
 class Game {
   public:
@@ -19,6 +21,7 @@ class Game {
       std::vector<Level*> maps;
       //player
       Player player;
+      int CurrentLevel;
 };
 
 #endif

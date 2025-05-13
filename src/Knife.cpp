@@ -1,7 +1,7 @@
 #include "Knife.h"
 
 Knife::Knife() {
-    Name = "Knife";
+    Name = "KNIFE";
 }
 
 std::string Knife::getName() {
