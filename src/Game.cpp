@@ -4,7 +4,10 @@ void Game::start() {
     //Game Start and introductions
     std::cout << "This is a text based, adventure game.\nyou have been on the track of discovering the ruins of an ancient lost society's whereabouts\nmonths of searching have led you to a remote location in the middle of the vietnam jungle" << std::endl;
     std::cout << "To learn the commands of the game type HELP" << std::endl;
-    GameLoop();
+    //debugging
+    std::cout << maps[0]->GetName();
+    std::cout << maps[0]->DisplayClue(0);
+    std::cout << maps[0]->DisplayClue(1);
 }
 
 //default constructor

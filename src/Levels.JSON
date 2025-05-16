@@ -3,19 +3,22 @@
         "name" : "Outer Door",
         "description" : "All around you is thick jungle. A massive Stone door worn by time stands in front of you.",
         "npcs" : ["Bill"],
-        "Clue1" : "You notice a stone tablet inscribed with text covered by a thick layer of jungle"
+        "Clues" : ["Vines", "Door"]
     },
     "Room2" : {
         "name" : "Inside",
-        "description" : "You are now inside"
+        "description" : "You are now inside",
+        "Clues" : []
     },
     "Room3" : {
         "name" : "Snake Room",
-        "description" : "This room is filled with snakes and there dangerous and they're gonna harm you"
+        "description" : "This room is filled with snakes and there dangerous and they're gonna harm you",
+        "Clues" : []
     },
     "Room4" : {
         "name" : "Gorilla Room",
-        "description" : "this room has an angry gorilla"
+        "description" : "this room has an angry gorilla",
+        "Clues" : []
     }
 
     

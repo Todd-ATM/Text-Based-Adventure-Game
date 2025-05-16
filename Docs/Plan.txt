@@ -18,6 +18,12 @@ High level Overview planning:
 *I decided to go for simplification of factory for the levels, simply given a specific ID the 
 *LevelFactory would construct a level with the ID's specific data #OfNPCS, #OfClues, etc;
 
+*I now have something difficult to come up with... specifically my USE function on items correspond to the environment around them
+*it matters a change in the levels current state aka it's current clue it's dealing with, depending what
+*the current clue is the use function either works or doesn't i.e knife cuts vines, but trying to solve jigsaw puzzle with a knife doesn't work
+
+*
+
 *Game class:
 *Starts the game, ends the game, would be in charge of the main loop, aka spawn the specific level
 *change the level,  and end the game. really would be it

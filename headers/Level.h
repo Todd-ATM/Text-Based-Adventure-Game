@@ -3,11 +3,12 @@
 
 #include <string>
 #include <map>
-#include "Clue.h"
+#include "ClueFactory.h"
+#include <vector>
 
 class Level {
   public:
-    Level(std::string name, std::string description);
+    Level(std::string name, std::string description, std::vector<std::string> clueNames);
 
     std::string DisplayDescription();
 
@@ -15,13 +16,16 @@ class Level {
 
     std::string GetName();
 
+    std::string DisplayClue(int i);
+
 
   private:
     std::string description;
     std::string name;
     //set of clues
-    std::map<std::string, Clue*> Clues;
-    
+    std::vector<Clue*> ClueObjects;
+    ClueFactory factory;
+
     
 };
 
