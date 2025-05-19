@@ -8,3 +8,7 @@
 std::string Clue::DisplayClueText() {
     return ClueString;
 }
+
+std::string Clue::GetName() {
+    return Name;
+}

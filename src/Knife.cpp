@@ -2,6 +2,7 @@
 
 Knife::Knife() {
     Name = "KNIFE";
+    CurrentClue = nullptr;
 }
 
 std::string Knife::getName() {
@@ -9,6 +10,13 @@ std::string Knife::getName() {
 }
 
 void Knife::Use() {
-    //do nothing for now
-    std::cout << "Used knife" << std::endl;
+    if (CurrentClue->GetName() == "Vines") {
+        std::cout << "You cut the vines, revealing a hidden switch. Pressing the switch\n causes the door to open and you enter" << std::endl;
+    } else {
+        std::cout << "You're knife does nothing" << std::endl;
+    }
+}
+
+void Knife::UpdateClue(Clue* Clue) {
+    CurrentClue = Clue;
 }

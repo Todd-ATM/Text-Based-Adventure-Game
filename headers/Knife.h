@@ -8,6 +8,7 @@ class Knife : public Item {
     Knife();
     void Use() override;
     std::string getName() override;
+    void UpdateClue(Clue* Clue) override;
 };
 
 #endif

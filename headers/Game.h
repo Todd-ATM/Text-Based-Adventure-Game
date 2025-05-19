@@ -7,6 +7,7 @@
 #include "Player.h"
 #include <map>
 #include "Clue.h"
+#include "GameStateManager.h"
 
 class Game {
   public:
@@ -22,6 +23,7 @@ class Game {
       //player
       Player player;
       int CurrentLevel;
+      GameState GameState;
 };
 
 #endif

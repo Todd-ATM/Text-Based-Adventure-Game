@@ -17,6 +17,13 @@ std::string Level::DisplayDescription() {
 }
 
 std::string Level::DisplayClue(int i) {
-    return ClueObjects[i]->DisplayClueText();
+    //scope checking,
+    if (i >= 0 && i < ClueObjects.size()) {
+        return ClueObjects[i]->DisplayClueText();
+    } else {
+        std::cout << "Invalid Clue does not exist. Couldn't display" <<std::endl;
+        return nullptr;
+    }
+
 }
 
